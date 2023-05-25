@@ -1,6 +1,6 @@
 from gym.envs.registration import register
 
 register(
-    id="gym-taxi-custom/taxi-custom",
-    entry_point="gym-taxi-custom.envs.toy_text:taxi-custom",
+    id="gym_taxi_custom/taxi_custom",
+    entry_point="gym_taxi_custom.envs.toy_text:taxi_customcustom",
 )

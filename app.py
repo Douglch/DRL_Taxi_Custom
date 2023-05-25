@@ -9,7 +9,7 @@ from tqdm import tqdm
 
 
 
-env = gym.make("gym-taxi-custom/taxi-custom", render_mode="human")
+env = gym.make("gym_taxi_custom/taxi_custom", render_mode="human")
 
 print("_____OBSERVATION SPACE_____ \n")
 print("Observation Space", env.observation_space)
