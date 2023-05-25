@@ -1,11 +1,7 @@
 setup.py
 envs/__init__.py
 envs/toy_text/__init__.py
-envs/toy_text/blackjack.py
-envs/toy_text/cliffwalking.py
-envs/toy_text/frozen_lake.py
 envs/toy_text/taxi_custom.py
-envs/toy_text/utils.py
 gym_taxi_custom.egg-info/PKG-INFO
 gym_taxi_custom.egg-info/SOURCES.txt
 gym_taxi_custom.egg-info/dependency_links.txt

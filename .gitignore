@@ -1,1 +1,3 @@
-gym_taxi_custom.egg-info
+gym_taxi_custom/gym_taxi_custom.egg-info/
+gym_taxi_custom/build/
+gym_taxi_custom/dist/
