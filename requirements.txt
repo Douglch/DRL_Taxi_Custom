@@ -1,3 +1,4 @@
+gym
 gym_taxi_custom
 numpy>=1.18.0
 cloudpickle>=1.2.0
