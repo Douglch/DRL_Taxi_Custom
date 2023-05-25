@@ -7,7 +7,6 @@ A deep reinforcement learning project on a customized environment from OpenAi's 
 The customized environment has to be built from source. To do so, run
 
 ```bash
-cd gym_taxi_custom
 python setup.py build install
 ```
 
