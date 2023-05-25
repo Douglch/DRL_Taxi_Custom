@@ -21,7 +21,7 @@ MAP = [
 WINDOW_SIZE = (550, 350)
 
 
-class TaxiEnv(Env):
+class CustomTaxiEnv(Env):
     """
 
     The Taxi Problem
@@ -122,7 +122,7 @@ class TaxiEnv(Env):
 
     metadata = {
         "render_modes": ["human", "ansi", "rgb_array"],
-        "render_fps": 24,
+        "render_fps": 60,
     }
 
     def __init__(self, render_mode: Optional[str] = None):

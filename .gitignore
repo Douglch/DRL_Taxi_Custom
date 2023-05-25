@@ -1,4 +1,10 @@
 .env
-gym_taxi_custom/gym_taxi_custom.egg-info/
-gym_taxi_custom/build/
-gym_taxi_custom/dist/
+__pycache__/
+.ipynb_checkpoints/
+.gitattributes
+.gitconfig
+gym_taxi_custom/
+gym_taxi_custom.egg-info/
+img/
+build/
+dist/

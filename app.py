@@ -1,13 +1,12 @@
 import gym_taxi_custom
-
+import gym
 import numpy as np
-import gymnasium as gym
 import random
 from tqdm import tqdm
 
 
-
-env = gym.make("gym_taxi_custom/taxiV0", render_mode="human")
+# render_mode="human"
+env = gym.make("gym_taxi_custom/Taxi-v0", render_mode="rgb_array")
 
 print("_____OBSERVATION SPACE_____ \n")
 print("Observation Space", env.observation_space)
@@ -79,15 +78,11 @@ decay_rate = 0.005            # Exponential decay rate for exploration prob
 
 
 def train(n_training_episodes, min_epsilon, max_epsilon, decay_rate, env, max_steps, Qtable):
-  print("going into episode loop")
   for episode in tqdm(range(n_training_episodes)):
-    print("in episode loop")
     # Reduce epsilon (because we need less and less exploration)
     epsilon = min_epsilon + (max_epsilon - min_epsilon)*np.exp(-decay_rate*episode)
     # Reset the environment
-    print("resetting env")
     state, info = env.reset()
-    print("env reset")
     step = 0
     terminated = False
     truncated = False
@@ -99,8 +94,7 @@ def train(n_training_episodes, min_epsilon, max_epsilon, decay_rate, env, max_st
       # Take action At and observe Rt+1 and St+1
       # Take the action (a) and observe the outcome state(s') and reward (r)
       new_state, reward, terminated, truncated, info = env.step(action)
-      env.render()
-      print("rendered")
+      # env.render()
       # Update Q(s,a):= Q(s,a) + lr [R(s,a) + gamma * max Q(s',a') - Q(s,a)]
       Qtable[state][action] = Qtable[state][action] + learning_rate * (reward + gamma * np.max(Qtable[new_state]) - Qtable[state][action])   
 
