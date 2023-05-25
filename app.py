@@ -3,13 +3,11 @@ import gym_taxi_custom
 import numpy as np
 import gymnasium as gym
 import random
-import imageio
-import os
 from tqdm import tqdm
 
 
 
-env = gym.make("gym_taxi_custom/taxi_custom", render_mode="human")
+env = gym.make("gym_taxi_custom/taxiV0", render_mode="human")
 
 print("_____OBSERVATION SPACE_____ \n")
 print("Observation Space", env.observation_space)

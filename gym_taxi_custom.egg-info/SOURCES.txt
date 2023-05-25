@@ -1,0 +1,10 @@
+README.md
+setup.py
+gym_taxi_custom.egg-info/PKG-INFO
+gym_taxi_custom.egg-info/SOURCES.txt
+gym_taxi_custom.egg-info/dependency_links.txt
+gym_taxi_custom.egg-info/requires.txt
+gym_taxi_custom.egg-info/top_level.txt
+gym_taxi_custom/envs/__init__.py
+gym_taxi_custom/envs/toy_text/__init__.py
+gym_taxi_custom/envs/toy_text/taxi_custom.py
