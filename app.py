@@ -94,8 +94,9 @@ def train(n_training_episodes, min_epsilon, max_epsilon, decay_rate, env, max_st
       # Take action At and observe Rt+1 and St+1
       # Take the action (a) and observe the outcome state(s') and reward (r)
       new_state, reward, terminated, truncated, info = env.step(action)
-      # env.render()
       # Update Q(s,a):= Q(s,a) + lr [R(s,a) + gamma * max Q(s',a') - Q(s,a)]
+      print("state: ", state, " action: ", action, " reward: ", reward)
+      
       Qtable[state][action] = Qtable[state][action] + learning_rate * (reward + gamma * np.max(Qtable[new_state]) - Qtable[state][action])   
 
       # If terminated or truncated finish the episode

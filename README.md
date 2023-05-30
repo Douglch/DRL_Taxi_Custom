@@ -22,6 +22,8 @@ pip install -r requirements.txt
 
 To see how the model trains, you can follow the instructions on this [site](https://dibranmulder.github.io/2019/09/06/Running-an-OpenAI-Gym-on-Windows-with-WSL/) to learn how to run the environment on Windows.
 
+Replace the render_mode in `app.py` with `human` to see the model train.
+
 After installation, you can run the model by running
 
 ```bash
